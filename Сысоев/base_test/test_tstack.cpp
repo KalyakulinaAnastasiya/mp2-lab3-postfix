@@ -44,11 +44,7 @@ TEST(TStack, check_Get_Push_stack_IsFull)
 	EXPECT_EQ(2, st.Back());
 }
 
-TEST(TStack, throw_when_take_value_from_empty_stack)
-{
-	TStack<int> st(1);
-	ASSERT_ANY_THROW(st.Pop());
-}
+
 TEST(TStack, can_take_value_from_stack)
 {
 	TStack<int> st(2);

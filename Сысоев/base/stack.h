@@ -10,7 +10,7 @@ class TStack
   int size;
   int top;  //индекс последнего элемента в pMem
 public:
-  TStack(int _size)
+  TStack(int _size = MaxStackSize)
   {
     size = _size;
     top = -1;
@@ -36,11 +36,11 @@ public:
 		  return pMem[top--];
   }
   void Push(double v) {                            //добавить элемент
-	  if (IsFull())
-		  return pMem[++top] = v;
+	  if (!IsFull())
+		   pMem[++top] = v;
   }
 
-  char Back()
+  T Back()
   {
 	  if (IsEmpty())
 		  throw "Error";
