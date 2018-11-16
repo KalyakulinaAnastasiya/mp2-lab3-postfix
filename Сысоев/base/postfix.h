@@ -44,9 +44,9 @@ public:
 //  string GetPostfix() { return postfix; }
 //  string ToPostfix();
 //  double Calculate();
-	  double Operation(double left, double right, char c);
+	 /* double Operation(double left, double right, char c);
 	  bool IsOperator(char op);
-	  bool Compare(double tmp1, double tmp2);
+	  bool Compare(double tmp1, double tmp2);*/
 };
 
 #endif

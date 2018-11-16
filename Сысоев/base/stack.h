@@ -31,7 +31,7 @@ public:
   bool IsFull() {
 	  return top == size - 1;                //проверить стек на полноту
   }
-  char Pop() {                                   //взять из стека(элемент пропадает)
+  double Pop() {                                   //взять из стека(элемент пропадает)
 	  if (!IsEmpty())
 		  return pMem[top--];
   }
